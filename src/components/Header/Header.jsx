@@ -5,9 +5,31 @@ export default function Header() {
   const handleChangeBtn = () => {
     setWhichButton(!showButton);
   };
+  const Links = () => {
+    const links = [
+      { direction: "#portfolio", siteId: "Portfolio" },
+      { direction: "#contact", siteId: "Contacto" },
+      { direction: "#services", siteId: "Servicios" },
+      { direction: "#about", siteId: "About" },
+    ];
+    const handleLink = () => {
+      setWhichButton(false);
+    };
+    return (
+      <>
+        {links.map((l, index) => {
+          return (
+            <a key={index} href={l.direction} onClick={handleLink}>
+              {l.siteId}
+            </a>
+          );
+        })}
+      </>
+    );
+  };
   return (
     <>
-      <header className={styleFor["header"]}>
+      <header className={`headerr ${styleFor["header"]}`}>
         <div>
           <a href="#">
             <img
@@ -17,10 +39,7 @@ export default function Header() {
           </a>
         </div>
         <div className={styleFor["menu-desktop"]}>
-          <a href="#about">About</a>
-          <a href="#services">Servicios</a>
-          <a href="#porfolio">Porfolio</a>
-          <a href="#contact">Contacto</a>
+          <Links />
         </div>
         <div className={styleFor["menu-burger"]}>
           {!showButton ? (
@@ -44,10 +63,7 @@ export default function Header() {
                   </button>
                 </div>
                 <div className={styleFor["nav-options"]}>
-                  <a href="#about">About</a>
-                  <a href="#services">Servicios</a>
-                  <a href="#porfolio">Porfolio</a>
-                  <a href="#contact">Contacto</a>
+                  <Links />
                 </div>
               </div>
             </>
