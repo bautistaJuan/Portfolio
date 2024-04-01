@@ -1,4 +1,7 @@
 import { useState } from "react";
+import headerLogo from "../../assets/prfile.png";
+import burguerOpen from "../../assets/hamburguer-vector.png";
+import burguerClose from "../../assets/close-button.png";
 import styleFor from "./header.module.css";
 export default function Header() {
   const [showButton, setWhichButton] = useState(false);
@@ -32,10 +35,7 @@ export default function Header() {
       <header className={`headerr ${styleFor["header"]}`}>
         <div>
           <a href="#">
-            <img
-              src="/src/assets/prfile.png"
-              className={styleFor["header-logo"]}
-            />
+            <img src={headerLogo} className={styleFor["header-logo"]} />
           </a>
         </div>
         <div className={styleFor["menu-desktop"]}>
@@ -45,7 +45,7 @@ export default function Header() {
           {!showButton ? (
             <button onClick={handleChangeBtn}>
               <img
-                src="/src/assets/hamburguer-vector.png"
+                src={burguerOpen}
                 alt="menu"
                 className={styleFor["open-button-img"]}
               />
@@ -56,7 +56,7 @@ export default function Header() {
                 <div className={styleFor["nav-div_button"]}>
                   <button onClick={handleChangeBtn}>
                     <img
-                      src="/src/assets/close-button.png"
+                      src={burguerClose}
                       alt="menu"
                       className={styleFor["close-button-img"]}
                     />
