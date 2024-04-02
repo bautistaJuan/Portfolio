@@ -10,10 +10,10 @@ export default function Header() {
   };
   const Links = () => {
     const links = [
+      { direction: "#about", siteId: "About" },
+      { direction: "#services", siteId: "Servicios" },
       { direction: "#portfolio", siteId: "Portfolio" },
       { direction: "#contact", siteId: "Contacto" },
-      { direction: "#services", siteId: "Servicios" },
-      { direction: "#about", siteId: "About" },
     ];
     const handleLink = () => {
       setWhichButton(false);

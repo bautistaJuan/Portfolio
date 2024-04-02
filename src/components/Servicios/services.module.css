@@ -1,0 +1,45 @@
+.services-container {
+    padding: 90px 10px;
+    background-color: #000000e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-h3 {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.services-products {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.services-products img {
+    width: 260px;
+}
+
+.services-interfaces,
+.services-backend,
+.services-frontend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.services-text {
+    color: white;
+    text-align: center;
+    padding: 0 40px;
+    max-width: 600px;
+}
+
+.services-text h4 {
+    font-size: 25px;
+}
