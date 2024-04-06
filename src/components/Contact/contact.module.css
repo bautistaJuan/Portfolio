@@ -1,0 +1,56 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 19, 19);
+    color: white;
+    padding: 60px 20px;
+    min-height: 88vh;
+}
+
+@media (min-width:600px) {
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+.contact-container h3 {
+    margin: 0;
+    font-size: 33px;
+    text-align: center;
+}
+
+.contact-link,
+.contact-redes {
+    display: flex;
+}
+
+.contact-redes {
+    flex-direction: column;
+    /* border: solid green; */
+    text-align: center;
+}
+
+.contact-redes h4 {
+    font-size: 19px;
+}
+
+.contact-redes img {
+    width: 50px;
+}
+
+.contact-link {
+    color: white;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: solid; */
+    text-align: center;
+}
+
+.contact-div {
+    /* border: solid red; */
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
