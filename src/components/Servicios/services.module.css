@@ -20,6 +20,14 @@
     gap: 20px;
 }
 
+@media (min-width:900px) {
+    .services-products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .services-products img {
     width: 260px;
 }

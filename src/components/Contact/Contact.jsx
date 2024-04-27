@@ -18,25 +18,36 @@ export default function Contact() {
     <div id="contact" className={contactCss["contact-container"]}>
       <Form />
       <div className={contactCss["contact-redes"]}>
-        <h4>Donde encontrarme</h4>
-        {redes.map((info, idx) => {
-          return (
-            <div key={idx} className={contactCss["contact-div"]}>
-              <span className={contactCss["contact-name"]}>{info.name}</span>
-              {info.name.toLowerCase() === "email" ? (
-                <div className={contactCss["contact-link"]}>
-                  <span>{info.link}</span>
-                  <img src={info.img} alt="link-redes" />
-                </div>
-              ) : (
-                <a href={info.link} className={contactCss["contact-link"]}>
-                  <span>{info.link}</span>
-                  <img src={info.img} alt="link-redes" />
-                </a>
-              )}
-            </div>
-          );
-        })}
+        <span className={contactCss["contact-title"]}>Dónde encontrarme</span>
+        <div className={contactCss["contact-data-container"]}>
+          {redes.map((data, idx) => {
+            return (
+              <div key={idx} className={contactCss["contact-data"]}>
+                {data.name.toLowerCase() === "email" ? (
+                  <div className={contactCss["contact-icon"]}>
+                    <span className={contactCss["contact-name"]}>
+                      {data.name}
+                    </span>
+                    <span className={contactCss["contact-link"]}>
+                      {data.link}
+                    </span>
+                    <img src={data.img} alt="link-redes" />
+                  </div>
+                ) : (
+                  <a href={data.link} className={contactCss["contact-icon"]}>
+                    <span className={contactCss["contact-name"]}>
+                      {data.name}
+                    </span>
+                    <span className={contactCss["contact-link"]}>
+                      {data.link}
+                    </span>
+                    <img src={data.img} alt="link-redes" />
+                  </a>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

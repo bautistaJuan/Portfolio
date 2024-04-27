@@ -46,6 +46,10 @@ export default function Tecnologias() {
         title: "Firebase",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       },
+      {
+        title: "Tailwind",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
     ];
     return (
       <>

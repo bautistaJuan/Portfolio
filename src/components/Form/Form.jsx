@@ -35,40 +35,34 @@ export default function Form() {
       );
   };
   return (
-    <div id="contact" className={formCss["contact-container"]}>
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className={formCss["form-container"]}
-      >
-        <h3>Escribime</h3>
-        <label>
-          Nombre
-          <input type="text" name="user_name" autoComplete="off" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="user_email" autoComplete="off" />
-        </label>
-        <label className={formCss["form-text"]}>
-          Mensaje
-          <textarea name="message" />
-        </label>
-        {textError ? (
-          <span className={formCss["form-error"]}>
-            Debes ingresar todos los datos correctamente
-          </span>
-        ) : (
-          ""
-        )}
-        <label>
-          <input
-            className={formCss["form-button"]}
-            type="submit"
-            value={textBtn}
-          />
-        </label>
-      </form>
-    </div>
+    <form ref={form} onSubmit={sendEmail} className={formCss["form-container"]}>
+      <h3 className={formCss["form-title"]}>Escribime</h3>
+      <label>
+        Nombre
+        <input type="text" name="user_name" autoComplete="off" />
+      </label>
+      <label>
+        Email
+        <input type="email" name="user_email" autoComplete="off" />
+      </label>
+      <label className={formCss["form-text"]}>
+        Mensaje
+        <textarea name="message" />
+      </label>
+      {textError ? (
+        <span className={formCss["form-error"]}>
+          Debes ingresar todos los datos correctamente
+        </span>
+      ) : (
+        ""
+      )}
+      <label>
+        <input
+          className={formCss["form-button"]}
+          type="submit"
+          value={textBtn}
+        />
+      </label>
+    </form>
   );
 }
