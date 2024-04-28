@@ -1,6 +1,8 @@
 import portfolioCss from "./portfolio.module.css";
-import myVideo from "../../assets/Search Products.mp4";
-import poster from "../../assets/frontend.png";
+import ml from "../../assets/Search Products.mp4";
+import ppt from "../../assets/Piedra Papel Tijeras.mp4";
+import posterML from "../../assets/mercado-libre-logo.webp";
+import posterPPT from "../../assets/paper-rock-scissors.jpg";
 import world from "../../assets/world.png";
 import github from "../../assets/github-vector.png";
 
@@ -8,34 +10,20 @@ export default function Portfolio() {
   const proyectos = [
     {
       name: "Buscador de Mercado Libre",
-      video: myVideo,
+      video: ml,
+      poster: posterML,
       id: 1,
-      world: "#",
-      github: "#",
+      world: "https://search-products-sand.vercel.app/",
+      github: "https://github.com/bautistaJuan/React-search-products",
       desc: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     },
     {
-      name: "Google libros",
-      video: myVideo,
+      name: "PPT",
+      video: ppt,
+      poster: posterPPT,
       id: 2,
-      world: "#",
-      github: "#",
-      desc: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    },
-    {
-      name: "Google libros",
-      video: myVideo,
-      id: 2,
-      world: "#",
-      github: "#",
-      desc: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    },
-    {
-      name: "Google libros",
-      video: myVideo,
-      id: 2,
-      world: "#",
-      github: "#",
+      world: "https://piedra-papel-tijera-cyan.vercel.app/",
+      github: "https://github.com/bautistaJuan/Piedra-Papel-Tijera",
       desc: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     },
   ];
@@ -55,7 +43,7 @@ export default function Portfolio() {
                 className={portfolioCss["portfolio-video"]}
                 controls
                 muted
-                poster={poster}
+                poster={p.poster}
               >
                 <source src={p.video} type="video/mp4" />
                 Your browser does not support the video tag.
