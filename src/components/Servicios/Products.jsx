@@ -9,7 +9,7 @@ export function Products() {
       img: diseñoWeb,
       title: "Diseño Web",
       description:
-        "Gracias a lo que he aprendido hasta ahora, puedo ayudarte a plasmar tus ideas en una página web, enfocándome en el diseño responsive y las animaciones de las interacciones. Me baso en el paradigma mobile-first y utilizo HTML, JavaScript y CSS. Me mantengo actualizado sobre nuevos paradigmas de diseño y las capacidades visuales de los componentes para mejorar la interactividad de los usuarios al navegar por mis páginas y aplicaciones.",
+        "Gracias a lo que he aprendido hasta ahora, puedo ayudarte a plasmar tus ideas en una página web, enfocándome en el diseño responsive y las animaciones de las interacciones. Me baso en el paradigma mobile-first y utilizo HTML, JavaScript y CSS. Me mantengo actualizado sobre nuevos paradigmas de diseño y las capacidades visuales de los componentes para mejorar la interactividad de los usuarios al navegar por mis páginas web.",
       id: "services-interfaces",
     },
     {
@@ -23,7 +23,7 @@ export function Products() {
       img: frontend,
       title: " Frontend",
       description:
-        "Desarrollador Frontend experto en React con experiencia probada en la creación de interfaces web dinámicas y de alto rendimiento. Apasionado por la implementación de soluciones innovadoras, mi enfoque se centra en el diseño intuitivo y la experiencia del usuario. Con habilidades sólidas en HTML, CSS y JavaScript, así como en el uso de bibliotecas y herramientas de vanguardia, estoy comprometido a llevar cada proyecto al siguiente nivel de excelencia técnica y estética.",
+        "Desarrollador Frontend apasionado por la implementación de soluciones innovadoras, mi enfoque se centra en el diseño intuitivo y la experiencia del usuario. Con habilidades sólidas en HTML, CSS y JavaScript, así como en el uso de bibliotecas y herramientas de vanguardia, estoy comprometido a llevar cada proyecto al siguiente nivel de excelencia técnica y estética.",
       id: "services-frontend",
     },
   ];

@@ -1,6 +1,8 @@
 import portfolioCss from "./portfolio.module.css";
 import ml from "../../assets/Search Products.mp4";
 import ppt from "../../assets/Piedra Papel Tijeras.mp4";
+import chat from "../../assets/Chat-Firebase.mp4";
+import chatimg from "../../assets/chat.png";
 import posterML from "../../assets/mercado-libre-logo.webp";
 import posterPPT from "../../assets/paper-rock-scissors.jpg";
 import world from "../../assets/world.png";
@@ -9,22 +11,44 @@ import github from "../../assets/github-vector.png";
 export default function Portfolio() {
   const proyectos = [
     {
-      name: "Buscador de Mercado Libre",
+      title: "Buscador de Mercado Libre",
+      subtitle:
+        "TypeScript | React | CSS Modules| HTML5 | React Hooks | GitHub | APIs  ",
       video: ml,
       poster: posterML,
       id: 1,
       world: "https://search-products-sand.vercel.app/",
       github: "https://github.com/bautistaJuan/React-search-products",
-      desc: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      desc: `He creado una aplicación web donde puedes buscar artículos variados y ver los detalles, precio, imagenes y garantía, solamente buscas el producto del que te gustaría ver los detalles y listo !!.
+       Utilizo la API que provee Mercado Libre para desarrolladores.`,
     },
     {
-      name: "PPT",
+      title: "Chat Online",
+      subtitle:
+        "TypeScript | Firebase | CSS3| HTML5 | Lodash | Custom-Elements| @Vaadin/router | State management | Parcel | GitHub | Node.JS | Express | Rest API | MVC ",
+      video: chat,
+      poster: chatimg,
+      id: 2,
+      world: "https://chat-online-firebase.netlify.app/",
+      github: "https://github.com/bautistaJuan/chat-online",
+      desc: `He creado esta app sencilla donde puedes mandar mensajes online, ingresando tu nombre y tu email. 
+        Para esta app he tenido que crear mi propia API para despues consumirla del lado del frontend.
+
+      `,
+    },
+    {
+      title: "PPT",
+      subtitle:
+        "TypeScript | CSS3| HTML5 | Custom-Elements| State management | Parcel | GitHub",
       video: ppt,
       poster: posterPPT,
-      id: 2,
+      id: 3,
       world: "https://piedra-papel-tijera-cyan.vercel.app/",
       github: "https://github.com/bautistaJuan/Piedra-Papel-Tijera",
-      desc: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      desc: `
+        He creado esta aplicación para jugar Piedra, Papel o Tijeras. Sinceramente me gusta el concepto del juego y me encanto desarrollar 
+        esta aplicación, fue muy divertido :), por otra parte, la aplicación consta de 4 "paginas" 1: Bienvenida, 2: Instrucciones, 3: Juega y gana y 4: El resultado fianal.
+      `,
     },
   ];
 
@@ -49,7 +73,9 @@ export default function Portfolio() {
                 Your browser does not support the video tag.
               </video>
               <div className={portfolioCss["portfolio-desc"]}>
-                <h4>{p.name}</h4>
+                <h2>{p.title}</h2>
+                <br />
+                <h4>{p.subtitle}</h4>
                 <p>{p.desc}</p>
               </div>
               <div className={portfolioCss["portfolio-links"]}>

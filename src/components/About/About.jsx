@@ -10,7 +10,7 @@ export default function About() {
           Fullstack. Durante más de un año, me he dedicado al estudio y la
           práctica de diversas tecnologías web. Mi enfoque en la mejora continua
           me impulsa a buscar oportunidades donde pueda aplicar y compartir mis
-          habilidades, y colaborar en equipos dinámicos. Estoy ansioso por
+          habilidades y colaborar en equipos dinámicos. Estoy ansioso por
           enfrentar nuevos desafíos y contribuir al éxito de proyectos
           innovadores.
         </p>
