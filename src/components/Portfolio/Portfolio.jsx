@@ -33,7 +33,6 @@ export default function Portfolio() {
       github: "https://github.com/bautistaJuan/chat-online",
       desc: `He creado esta app sencilla donde puedes mandar mensajes online, ingresando tu nombre y tu email. 
         Para esta app he tenido que crear mi propia API para despues consumirla del lado del frontend.
-
       `,
     },
     {
