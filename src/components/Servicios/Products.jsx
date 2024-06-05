@@ -9,7 +9,7 @@ export function Products() {
       img: diseñoWeb,
       title: "Diseño Web",
       description:
-        "Gracias a lo que he aprendido hasta ahora, puedo ayudarte a plasmar tus ideas en una página web, enfocándome en el diseño responsive y las animaciones de las interacciones. Me baso en el paradigma mobile-first y utilizo HTML, JavaScript y CSS. Me mantengo actualizado sobre nuevos paradigmas de diseño y las capacidades visuales de los componentes para mejorar la interactividad de los usuarios al navegar por mis páginas web.",
+        "Puedo ayudarte a plasmar tus ideas en una página web, enfocándome en el diseño responsive y las animaciones de las interacciones. Me baso en el paradigma mobile-first y utilizo HTML, JavaScript y CSS. Me mantengo actualizado sobre nuevos paradigmas de diseño y las capacidades visuales de los componentes para mejorar la interactividad de los usuarios al navegar por mis páginas web.",
       id: "services-interfaces",
     },
     {

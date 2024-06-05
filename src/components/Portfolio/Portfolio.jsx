@@ -1,8 +1,8 @@
 import portfolioCss from "./portfolio.module.css";
 import ml from "../../assets/Search Products.mp4";
-import ppt from "../../assets/Piedra Papel Tijeras.mp4";
 import chat from "../../assets/Chat-Firebase.mp4";
 import chatimg from "../../assets/chat.png";
+import clicColor from "../../assets/clic-color.jpg";
 import posterML from "../../assets/mercado-libre-logo.webp";
 import posterPPT from "../../assets/paper-rock-scissors.jpg";
 import world from "../../assets/world.png";
@@ -39,7 +39,6 @@ export default function Portfolio() {
       title: "PPT",
       subtitle:
         "TypeScript | CSS3| HTML5 | Custom-Elements| State management | Parcel | GitHub",
-      video: ppt,
       poster: posterPPT,
       id: 3,
       world: "https://piedra-papel-tijera-cyan.vercel.app/",
@@ -47,6 +46,18 @@ export default function Portfolio() {
       desc: `
         He creado esta aplicación para jugar Piedra, Papel o Tijeras. Sinceramente me gusta el concepto del juego y me encanto desarrollar 
         esta aplicación, fue muy divertido :), por otra parte, la aplicación consta de 4 "paginas" 1: Bienvenida, 2: Instrucciones, 3: Juega y gana y 4: El resultado fianal.
+      `,
+    },
+    {
+      title: "Click on color",
+      subtitle: "TypeScript | React | HTML5 | useState | GitHub",
+      poster: clicColor,
+      id: 4,
+      world: "https://tap-colors.vercel.app/",
+      github: "https://github.com/bautistaJuan/tap-colors",
+      desc: `
+       Este es un juego atrentenido donde tenes que presionar el color que dice la letra. Abaja tenes dos botones
+       para elegir el correcto. El reloj corre hasta que consigas 15 puntos. Por cada error se descuentan 2 puntos.
       `,
     },
   ];
@@ -61,16 +72,20 @@ export default function Portfolio() {
               key={p.id}
               className={portfolioCss["portfolio-video-container"]}
             >
-              <video
-                key={p.idd}
-                className={portfolioCss["portfolio-video"]}
-                controls
-                muted
-                poster={p.poster}
-              >
-                <source src={p.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {p.video ? (
+                <video
+                  key={p.idd}
+                  className={portfolioCss["portfolio-video"]}
+                  controls
+                  muted
+                  poster={p.poster}
+                >
+                  <source src={p.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img src={p.poster} width={400} height={350} />
+              )}
               <div className={portfolioCss["portfolio-desc"]}>
                 <h2>{p.title}</h2>
                 <br />
