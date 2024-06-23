@@ -5,10 +5,8 @@ export default function Presentation() {
     <>
       <main className={presentationCss["main"]}>
         <div className={presentationCss["presentation-text"]}>
-          <h1>
-            ¡Hola! <span className={presentationCss["soyJuan"]}>Soy Juan.</span>
-          </h1>
-          <h2>Desarrollador web FullStack</h2>
+          <h1>Bienvenido</h1>
+          <h2 className={presentationCss["fullstack"]}>Mi nombre es Juan</h2>
         </div>
       </main>
     </>

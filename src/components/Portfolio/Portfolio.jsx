@@ -1,6 +1,4 @@
 import portfolioCss from "./portfolio.module.css";
-import ml from "../../assets/Search Products.mp4";
-import chat from "../../assets/Chat-Firebase.mp4";
 import chatimg from "../../assets/chat.png";
 import clicColor from "../../assets/clic-color.jpg";
 import posterML from "../../assets/mercado-libre-logo.webp";
@@ -14,7 +12,6 @@ export default function Portfolio() {
       title: "Buscador de Mercado Libre",
       subtitle:
         "TypeScript | React | CSS Modules| HTML5 | React Hooks | GitHub | APIs  ",
-      video: ml,
       poster: posterML,
       id: 1,
       world: "https://search-products-sand.vercel.app/",
@@ -26,7 +23,6 @@ export default function Portfolio() {
       title: "Chat Online",
       subtitle:
         "TypeScript | Firebase | CSS3| HTML5 | Lodash | Custom-Elements| @Vaadin/router | State management | Parcel | GitHub | Node.JS | Express | Rest API | MVC ",
-      video: chat,
       poster: chatimg,
       id: 2,
       world: "https://chat-online-firebase.netlify.app/",
@@ -56,7 +52,7 @@ export default function Portfolio() {
       world: "https://tap-colors.vercel.app/",
       github: "https://github.com/bautistaJuan/tap-colors",
       desc: `
-       Este es un juego atrentenido donde tenes que presionar el color que dice la letra. Abaja tenes dos botones
+       Este es un juego atrentenido donde tenes que presionar el color que dice la letra. Abajo tenes dos botones
        para elegir el correcto. El reloj corre hasta que consigas 15 puntos. Por cada error se descuentan 2 puntos.
       `,
     },
@@ -68,24 +64,8 @@ export default function Portfolio() {
       <div className={portfolioCss["portfolio-proyectos-container"]}>
         {proyectos.map(p => {
           return (
-            <div
-              key={p.id}
-              className={portfolioCss["portfolio-video-container"]}
-            >
-              {p.video ? (
-                <video
-                  key={p.idd}
-                  className={portfolioCss["portfolio-video"]}
-                  controls
-                  muted
-                  poster={p.poster}
-                >
-                  <source src={p.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <img src={p.poster} width={400} height={350} />
-              )}
+            <div key={p.id} className={portfolioCss["portfolio"]}>
+              <img src={p.poster} width={300} height={300} />
               <div className={portfolioCss["portfolio-desc"]}>
                 <h2>{p.title}</h2>
                 <br />

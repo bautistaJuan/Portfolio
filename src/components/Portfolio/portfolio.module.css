@@ -28,42 +28,23 @@
 
 }
 
-.portfolio-video-container {
+
+.portfolio {
     padding: 5px;
-    max-width: 500px;
+    max-width: 320px;
+    min-height: 820px;
     border: solid 1px grey;
 }
 
 
 
-.portfolio-video-container h4 {
+.portfolio h4 {
     margin: 0;
-}
-
-.portfolio-video {
-    width: 250px;
-    height: 200px;
-}
-
-@media (min-width:380px) {
-    .portfolio-video {
-        width: 320px;
-        height: 250px;
-    }
-
-}
-
-@media (min-width:500px) {
-    .portfolio-video {
-        width: 385px;
-        height: 350px;
-    }
-
 }
 
 .portfolio-desc {
     padding: 1px;
-    min-height: 340px;
+    min-height: 440px;
 }
 
 .portfolio-links {

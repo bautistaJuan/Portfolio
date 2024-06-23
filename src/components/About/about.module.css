@@ -50,9 +50,9 @@
 }
 
 .about-img {
-    border: solid white;
-    border-radius: 80%;
-    width: 200px;
+    /* border: solid white; */
+    border-radius: 50%;
+    width: 220px;
     padding: 5px;
 }
 

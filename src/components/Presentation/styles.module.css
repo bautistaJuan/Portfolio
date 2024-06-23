@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 h1,
-h2 {
-    margin: 0;
+h2,
+h3 {
+    margin: 0px;
 }
+
 
 .main {
     margin-top: 80px;
-    height: 88vh;
+    height: 65vh;
     overflow: hidden;
     background-image: url("/src/assets/desktop-unsplash.jpg");
     background-size: cover;
@@ -18,15 +20,26 @@ h2 {
     justify-content: flex-end;
 }
 
-.soyJuan {
-    color: rgb(101, 190, 220);
+@media (min-width:1000px) {
+    .main {
+        background-position: top;
+    }
 }
 
+
 .presentation-text {
+    backdrop-filter: blur(5px);
+    z-index: 1;
     font-size: 27px;
     text-align: center;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(247, 247, 247);
+    color: white;
+    /* color: rgba(3, 128, 238, 0.653); */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
