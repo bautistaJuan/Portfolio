@@ -1,5 +1,5 @@
 import aboutCss from "./about.module.css";
-import foto from "../../assets/foto-de-mi.jpg";
+import foto from "../../assets/foto-de-mi.png";
 export default function About() {
   return (
     <div id="about" className={aboutCss["about-container"]}>
