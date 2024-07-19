@@ -40,13 +40,8 @@
     color: white;
     font-size: 18px;
     line-height: 30px;
-    text-align: end;
     max-width: 310px;
-}
-
-.about-p {
     text-align: center;
-    align-self: auto;
 }
 
 .about-img {

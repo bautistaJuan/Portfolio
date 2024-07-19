@@ -1,5 +1,5 @@
 import { useState } from "react";
-import headerLogo from "../../assets/prfile.png";
+import headerLogo from "../../assets//llaves.png";
 import burguerOpen from "../../assets/hamburguer-vector.png";
 import burguerClose from "../../assets/close-button.png";
 import styleFor from "./header.module.css";

@@ -20,35 +20,52 @@
     gap: 20px;
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
     .portfolio-proyectos-container {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
 }
-
 
 .portfolio {
     padding: 5px;
-    max-width: 320px;
-    min-height: 820px;
-    border: solid 1px grey;
+    width: 320px;
+    min-height: 860px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
 
 .portfolio h4 {
     margin: 0;
 }
 
+.portfolio-proyectos-subtitle {
+    font-family: cursive;
+    font-weight: 100;
+}
+
+.portfolio-proyectos-title {
+    margin-bottom: 20px;
+}
+
 .portfolio-desc {
-    padding: 1px;
-    min-height: 440px;
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-desc-text {
+    text-align: justify;
 }
 
 .portfolio-links {
     display: flex;
     justify-content: space-around;
+    align-self: end;
     padding: 5px;
+    width: 100%;
 }

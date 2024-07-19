@@ -4,10 +4,9 @@ export default function Presentation() {
   return (
     <>
       <main className={presentationCss["main"]}>
-        <div className={presentationCss["presentation-text"]}>
-          <h1>Bienvenido</h1>
-          <h2 className={presentationCss["fullstack"]}>Mi nombre es Juan</h2>
-        </div>
+        <h1 className={presentationCss["presentation-text"]}>
+          Bienvenido a mi pagina web.
+        </h1>
       </main>
     </>
   );
