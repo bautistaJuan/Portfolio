@@ -26,19 +26,19 @@ h3 {
 }
 
 .presentation-text {
+    /* border: solid; */
     display: flex;
     padding: 20px;
     font-size: 50px;
+    font-family: Roboto;
     height: 100%;
     text-align: center;
-    align-items: center;
-    color: rgb(8, 115, 237);
+    align-items: end;
+    color: rgb(6 87 179);
     text-shadow:
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    backdrop-filter: blur(1px);
-
 
 }
 

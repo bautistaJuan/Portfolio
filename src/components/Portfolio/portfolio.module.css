@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.portfolio-container h1 {
+    color: #0fa0c7;
+}
+
 .portfolio-proyectos-container {
     width: 100%;
     display: flex;
@@ -40,6 +44,8 @@
 
 .portfolio h4 {
     margin: 0;
+    color: #545454;
+    ;
 }
 
 .portfolio-proyectos-subtitle {

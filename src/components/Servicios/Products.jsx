@@ -23,7 +23,7 @@ export function Products() {
       img: frontend,
       title: " Frontend",
       description:
-        "Desarrollador Frontend apasionado por la implementación de soluciones innovadoras, mi enfoque se centra en el diseño intuitivo y la experiencia del usuario. Con habilidades sólidas en HTML, CSS y JavaScript, así como en el uso de bibliotecas y herramientas de vanguardia, estoy comprometido a llevar cada proyecto al siguiente nivel de excelencia técnica y estética.",
+        "Mi enfoque se centra en el diseño intuitivo y la experiencia del usuario. Con habilidades sólidas en HTML, CSS y JavaScript, así como en el uso de bibliotecas y herramientas de vanguardia, estoy comprometido a llevar cada proyecto al siguiente nivel de excelencia técnica y estética.",
       id: "services-frontend",
     },
   ];

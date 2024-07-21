@@ -7,7 +7,8 @@
 
 .services-h3 {
     margin: 0;
-    color: white;
+    color: #0fa0c7;
+    ;
     font-size: 32px;
     text-align: center;
 }
@@ -29,7 +30,13 @@
 }
 
 .services-products img {
-    width: 260px;
+    width: 210px;
+}
+
+@media (min-width:800px) {
+    .services-products img {
+        width: 250px;
+    }
 }
 
 .services-interfaces,
@@ -49,5 +56,7 @@
 }
 
 .services-text h4 {
+    border-bottom: solid 1px;
     font-size: 25px;
+    color: #309292;
 }
