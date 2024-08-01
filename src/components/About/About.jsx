@@ -12,9 +12,9 @@ export default function About() {
       <h3 className={aboutCss["about-h3"]}>About Me</h3>
       <div className={aboutCss["about-presentation"]}>
         <p className={aboutCss["about-p"]}>
-          Hola, mi nombre es Juan, me podes decir Juanchi
+          Mi nombre es Juan
           <br></br>
-          Soy programador autodidacta y una persona que ama aprender.
+          Soy programador autodidacta, me gusta tocar la guitarra y la leer.
           <br></br>
           {text ? (
             <b className={aboutCss["about-a"]} onClick={handleVerMas}>
@@ -23,17 +23,7 @@ export default function About() {
             </b>
           ) : (
             <span>
-              A mis 22 años, me encuentro en un punto crucial donde quiero
-              dedicarme a hacer cosas que realmente me apasionan. Sin embargo,
-              siento que hay ciertas limitaciones que me frenan. Estas barreras
-              son en parte de naturaleza financiera, social, o incluso interna,
-              como el miedo al fracaso o la duda sobre mis propias capacidades.
-              A pesar de estos desafíos, estoy decidido a encontrar maneras de
-              superarlos. Quiero explorar mis intereses y descubrir cómo puedo
-              integrarlos en mi vida de una manera significativa y sostenible.
-              Sé que este proceso puede ser intimidante, pero también
-              emocionante, ya que representa la oportunidad de crecer y
-              desarrollarme tanto personal como profesionalmente.
+              Soy programador con experiencia en el desarrollo de sitios web y aplicaciones web utilizando tecnologías modernas. Mi enfoque principal es crear  eficientes, intuitivas y visualmente atractivas para mis clientes. Me apasiona la programación y siempre estoy buscando aprender y aplicar nuevas tecnologías para mejorar mis habilidades y resultados.
               <a
                 className={aboutCss["about-a"]}
                 onClick={handleVerMas}
