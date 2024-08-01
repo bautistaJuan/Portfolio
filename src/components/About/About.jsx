@@ -14,7 +14,7 @@ export default function About() {
         <p className={aboutCss["about-p"]}>
           Mi nombre es Juan
           <br></br>
-          Soy programador autodidacta, me gusta tocar la guitarra y la leer.
+          Soy programador autodidacta, me gusta tocar la guitarra y leer.
           <br></br>
           {text ? (
             <b className={aboutCss["about-a"]} onClick={handleVerMas}>
