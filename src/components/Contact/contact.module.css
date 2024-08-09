@@ -88,15 +88,14 @@
 
 
 .contact-data-container {
-    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    /* padding: 5px; */
+    background-color: #0fa0c7;
+    width: fit-content;
     justify-content: center;
-    height: 400px;
-}
-
-.contact-data {
-    padding: 5px;
-    margin-bottom: 15px;
-
+    gap: 45px;
+    border-radius: 10px;
 }
 
 @media (min-width:900px) {

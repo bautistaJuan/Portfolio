@@ -10,7 +10,6 @@ function App() {
     <div className="app-container">
       <Header />
       <Presentation />
-
       <About />
       <Services />
       <Tecnologias />
