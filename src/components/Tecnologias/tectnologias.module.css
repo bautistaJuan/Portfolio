@@ -1,17 +1,9 @@
 .tecno-container {
     height: 100%;
     background-color: #1c1c1c;
-    padding: 40px 40px 80px;
+    padding: 40px 0px 80px;
 }
 
-.tecno-container h4 {
-    margin: 0;
-    font-size: 32px;
-    color: #0fa0c7;
-    ;
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 .icons-tr {
     display: flex;
@@ -27,7 +19,7 @@
 .icons-tr {
     display: flex;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 900px;
     justify-content: center;
 }
 
@@ -36,13 +28,17 @@
 }
 
 .icons-tr td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #043447d1;
     text-align: center;
     outline: 1px solid black;
     color: white;
-    min-height: 32px;
     padding: 18px 0px;
     width: 100px;
+    gap: 10px;
 }
 
 .icons-tr img {

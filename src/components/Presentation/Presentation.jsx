@@ -1,18 +1,24 @@
-import presentationCss from "./styles.module.css";
-import ftPresentation from "../../assets/IMG-20240807-WA0004.jpg";
+import ftPresentation from "../../assets/Diseño-2.png";
 export default function Presentation() {
   return (
     <>
-      <main className={presentationCss["main"]}>
-        <h1 className={presentationCss["main_h1"]}>
-          Hola, soy
-          <br />
-          <span className={presentationCss["main_h1_span"]}>Juan Vega</span>
-        </h1>
-        <div className={presentationCss["main_div-h2"]}>
-          <h2 className={presentationCss["main_div_h2"]}>FRONT-END DEV</h2>
+      <main className="flex  flex-col md:flex-row items-center justify-around lg:justify-evenly  mt-[6rem]   overflow-hidden p-4 text-center">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-[3rem] lg:text-[4rem] p-3">
+            Hola, soy
+            <br />
+            <span className="font-extrabold">Juan Vega</span>
+          </h1>
+          <div className="flex items-center justify-center bg-[#416BC6] min-w-80 h-20 text-center p-4 rounded">
+            <span className="text-[2rem] lg:text-[3rem] font-semibold text-white">
+              FRONT-END DEV
+            </span>
+          </div>
         </div>
-        <img className={presentationCss["main_img"]} src={ftPresentation} />
+        <img
+          className="w-[20rem] h-[25rem] lg:h-[29rem] lg:w-[22rem]"
+          src={ftPresentation}
+        />
       </main>
     </>
   );

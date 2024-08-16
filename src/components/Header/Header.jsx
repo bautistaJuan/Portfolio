@@ -1,5 +1,5 @@
 import { useState } from "react";
-import headerLogo from "../../assets//llaves.png";
+import headerLogo from "../../assets/Coding-bro.png";
 import burguerOpen from "../../assets/hamburguer-vector.png";
 import burguerClose from "../../assets/close-button.png";
 import styleFor from "./header.module.css";
@@ -32,7 +32,7 @@ export default function Header() {
   };
   return (
     <>
-      <header className={`headerr ${styleFor["header"]}`}>
+      <header className={styleFor["header"]}>
         <div>
           <a href="#">
             <img src={headerLogo} className={styleFor["header-logo"]} />

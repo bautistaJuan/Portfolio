@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 1px;
-
-}
-
-a {
-    text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* .span {
+    @apply text-[2rem] lg:text-[3rem] font-semibold text-white
+} */

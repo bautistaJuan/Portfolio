@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import formCss from "./form.module.css";
 import emailjs from "@emailjs/browser";
 
 export default function Form() {
@@ -35,34 +34,54 @@ export default function Form() {
       );
   };
   return (
-    <form ref={form} onSubmit={sendEmail} className={formCss["form-container"]}>
-      <h3 className={formCss["form-title"]}>Escribime</h3>
-      <label>
-        Nombre
-        <input type="text" name="user_name" autoComplete="off" />
-      </label>
-      <label>
-        Email
-        <input type="email" name="user_email" autoComplete="off" />
-      </label>
-      <label className={formCss["form-text"]}>
-        Mensaje
-        <textarea name="message" />
-      </label>
-      {textError ? (
-        <span className={formCss["form-error"]}>
-          Debes ingresar todos los datos correctamente
-        </span>
-      ) : (
-        ""
-      )}
-      <label>
-        <input
-          className={formCss["form-button"]}
-          type="submit"
-          value={textBtn}
-        />
-      </label>
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex flex-col items-center p-5 gap-10 md:p-10  h-[35rem] justify-center"
+    >
+      <div className=" flex flex-col items-center gap-10 w-full md:flex-row md:w-[45rem] 2xl:w-[50rem] ">
+        <label className="flex flex-col gap-1 w-full">
+          Nombre
+          <input
+            type="text"
+            name="user_name"
+            autoComplete="off"
+            className="h-14 p-2 bg-[#2c2c2c79] rounded text-white w-full focus:outline-none"
+          />
+        </label>
+        <label className="flex flex-col gap-1 w-full">
+          Email
+          <input
+            type="email"
+            name="user_email"
+            autoComplete="off"
+            className="h-14 p-2 bg-[#2c2c2c79] rounded text-white w-full focus:outline-none"
+          />
+        </label>
+      </div>
+      <div className=" flex flex-col  gap-12 w-full md:w-[45rem] 2xl:w-[50rem]">
+        <label className="flex flex-col gap-1 mt-7.5 w-full md:h-[10rem]">
+          Mensaje
+          <textarea
+            name="message"
+            className="h-24 md:min-h-full p-2 bg-[#2c2c2c79] rounded text-white w-full focus:outline-none"
+          />
+        </label>
+        {textError ? (
+          <span className="text-red-600 italic text-sm ">
+            Debes ingresar todos los datos correctamente
+          </span>
+        ) : (
+          ""
+        )}
+        <label className="w-full h-[3.5rem]">
+          <input
+            type="submit"
+            value={textBtn}
+            className="bg-[#0fa0c73d] h-full text-lg py-2.5 px-5 rounded text-white font-bold mt-7.5 w-full cursor-pointer"
+          />
+        </label>
+      </div>
     </form>
   );
 }

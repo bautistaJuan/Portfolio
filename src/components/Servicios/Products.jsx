@@ -1,45 +1,52 @@
-import servicesCss from "./services.module.css";
-import diseñoWeb from "../../assets/web_desing.png";
-import backend from "../../assets/backend.png";
-import frontend from "../../assets/frontend.png";
+import diseñoWeb from "../../assets/Prototyping process-bro.png";
+import frontend from "../../assets/Static website-amico.png";
 
 export function Products() {
   let info = [
     {
       img: diseñoWeb,
-      title: "Diseño Web",
+      title: "Diseño Personalizado",
       description:
-        "Puedo ayudarte a plasmar tus ideas en una página web, enfocándome en el diseño responsive y las animaciones de las interacciones. Me baso en el paradigma mobile-first y utilizo HTML, JavaScript y CSS. Me mantengo actualizado sobre nuevos paradigmas de diseño y las capacidades visuales de los componentes para mejorar la interactividad de los usuarios al navegar por mis páginas web.",
+        "Puedo diseñar páginas webs que estén a la altura de las expectativas. Mi compromiso esta en crear un diseño adaptativo y amigable para que los usuarios puedan encontrar desde el primer momento eso que están buscando",
       id: "services-interfaces",
     },
     {
-      img: backend,
-      title: "Backend",
-      description:
-        "Como Desarrollador FullStack, estoy encargado de crear y mantener mis propias API REST, diseñadas para ser fácilmente consumidas por el Frontend. Empleo el esquema MVC (Modelo/Vista/Controlador) para organizar la lógica de mis aplicaciones. Utilizo Postman como herramienta principal para diseñar y probar los endpoints, mientras que para la implementación, confío en Node.js junto con Express, aprovechando su robustez y eficiencia en el desarrollo web",
-      id: "services-backend",
-    },
-    {
       img: frontend,
-      title: " Frontend",
+      title: "Desarrollo web",
       description:
-        "Mi enfoque se centra en el diseño intuitivo y la experiencia del usuario. Con habilidades sólidas en HTML, CSS y JavaScript, así como en el uso de bibliotecas y herramientas de vanguardia, estoy comprometido a llevar cada proyecto al siguiente nivel de excelencia técnica y estética.",
+        "Como desarrollador web también me encargo de escribir el código para darle vida a las páginas web, previamente diseñadas. Aplicando mis conocimientos como desarrollador Frontend",
       id: "services-frontend",
     },
   ];
   return (
-    <>
+    <section className="flex flex-col lg:flex-row lg:gap-[4rem] 2xl:gap-[26rem] ">
       {info.map((inf, index) => {
         return (
-          <div key={index} className={servicesCss[inf.id]}>
-            <img src={inf.img} alt={inf.title} />
-            <div className={servicesCss["services-text"]}>
-              <h4>{inf.title}</h4>
-              <span>{inf.description}</span>
+          <div
+            key={index}
+            className="flex flex-col  w-[21rem] sm:w-[30rem] items-center  mb-24 min-h-[43rem] lg:w-[32rem]"
+          >
+            <img
+              src={inf.img}
+              alt={inf.title}
+              className="w-[21rem] sm:w-[26rem]"
+            />
+            <div className="text-white text-center flex flex-col w-full ">
+              <h4 className="text-[1.5rem] sm:text-[1.8rem] font-bold p-5">
+                {inf.title}
+              </h4>
+              <span className="font-extralight sm:text-[1.4rem] ">
+                {inf.description}
+              </span>
             </div>
+            <a href="#contact" className="mt-auto">
+              <button className="bg-[#416BC6] rounded-xl mt-7 h-[4rem] w-[18rem] sm:w-[20rem] text-white font-semibold text-[1.3rem]">
+                Solicitar Servicios
+              </button>
+            </a>
           </div>
         );
       })}
-    </>
+    </section>
   );
 }
