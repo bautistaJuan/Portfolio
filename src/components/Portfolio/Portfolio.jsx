@@ -82,7 +82,7 @@ export default function Portfolio() {
         <h1 className="text-[#0FA0C7]  font-extrabold text-[2.5rem] text-center mb-14 pt-[6rem]">
           Portfolio
         </h1>
-        <div className="w-10/12 px-5 pb-32 justify-center place-items-center grid 2xl:grid-cols-3 :grid-cols-2  gap-12 min-h-screen  ">
+        <div className="w-10/12 px-5 pb-32 justify-center place-items-center grid 2xl:grid-cols-3 md:grid-cols-2  gap-12 min-h-screen  ">
           {proyectos.map(p => {
             return (
               <motion.div
