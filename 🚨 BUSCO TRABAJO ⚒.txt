@@ -1,3 +1,0 @@
-Desarrolle una página web que te permite buscar productos de mercado libre.
-Consume la API de mercado libre y muestra los resultados de la búsqueda y los detalles de un producto en particular.
-Esta página  esta hecha con React, TypeScript, react-router-dom y la librería nuka-carousel para mostrar las imágenes de los productos.
