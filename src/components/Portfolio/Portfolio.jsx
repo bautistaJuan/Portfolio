@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import animes from "../../assets/animes.jpg";
+import chapa from "../../assets/chapa-pintura.jpg";
 import clima from "../../assets/clima.jpg";
-import posterML from "../../assets/mercado-libre-logo.webp";
-import posterPPT from "../../assets/paper-rock-scissors.jpg";
+import posterML from "../../assets/mercado-libre-logo.png";
 import world from "../../assets/world.png";
 import github from "../../assets/github-vector.png";
 
@@ -26,7 +25,7 @@ export default function Portfolio() {
     {
       title: "Buscador de Mercado Libre",
       subtitle:
-        "TypeScript | React | CSS Modules| HTML5 | React Hooks | GitHub | APIs  ",
+        "TypeScript | React | CSS Modules| HTML5 | React Hooks | GitHub | APIs | Responsive",
       poster: posterML,
       id: 1,
       world: "https://search-products-sand.vercel.app/",
@@ -34,28 +33,14 @@ export default function Portfolio() {
       desc: `He creado una aplicación web donde puedes buscar artículos variados y ver los detalles, precio, imagenes y garantía, solamente buscas el producto del que te gustaría ver los detalles y listo !!.
        Utilizo la API que provee Mercado Libre para desarrolladores.`,
     },
-
     {
-      title: "PIEDRA PAPEL O TIJERA",
+      title: "Chapa y Pintura",
       subtitle:
-        "TypeScript | CSS3| HTML5 | Custom-Elements| State management | Parcel | GitHub",
-      poster: posterPPT,
-      id: 2,
-      world: "https://piedra-papel-tijera-cyan.vercel.app/",
-      github: "https://github.com/bautistaJuan/Piedra-Papel-Tijera",
-      desc: `
-        He creado esta aplicación para jugar Piedra, Papel o Tijeras. Sinceramente me gusta el concepto del juego y me encanto desarrollar
-        esta aplicación, fue muy divertido :), por otra parte, la aplicación consta de 4 "paginas" 1: Bienvenida, 2: Instrucciones, 3: Juega y gana y 4: El resultado fianal.
-      `,
-    },
-    {
-      title: " SCROLL INFINITO DE ANIMES",
-      subtitle:
-        "TypeScript | React | Next.js | HTML5 | Tailwind CSS | GitHub | Framer Motion",
-      poster: animes,
+        "JavaScript| SPA | HTML5 | CSS | Custom-Elements | Figma | Social Media | Mobile",
+      poster: chapa,
       id: 4,
-      world: "https://anime-infinity-scroll-murex.vercel.app/",
-      github: "https://github.com/bautistaJuan/anime-infinity-scroll",
+      world: "https://chapa-pitura.vercel.app/",
+      github: "https://github.com/bautistaJuan/chapa-pitura",
       desc: `Esta página es para aquellas personas que se consideran fan del anime, contiene una colección de los 
         mejores animes de todos los tiempos.
         Cree esta página con la intención de practicar un poco con el framework Next.js, utilice un efecto que me gusto mucho de Framer Motion. 
@@ -76,13 +61,15 @@ export default function Portfolio() {
     <>
       <div
         className="text-center text-white bg-black flex flex-col justify-center items-center"
-        ref={ref}
         id="portfolio"
       >
         <h1 className="text-[#0FA0C7]  font-extrabold text-[2.5rem] text-center mb-14 pt-[6rem]">
           Portfolio
         </h1>
-        <div className="w-10/12 px-5 pb-32 justify-center place-items-center grid 2xl:grid-cols-3 md:grid-cols-2  gap-12 min-h-screen  ">
+        <div
+          ref={ref}
+          className="w-10/12 px-5 pb-32 justify-center place-items-center grid 2xl:grid-cols-3 lg:grid-cols-2  gap-12 min-h-screen  "
+        >
           {proyectos.map(p => {
             return (
               <motion.div

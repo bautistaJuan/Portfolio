@@ -13,7 +13,7 @@
 }
 
 .icons-img {
-    width: 90px;
+    width: 100%;
 }
 
 .icons-tr {
@@ -32,21 +32,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #043447d1;
+    background-color: black;
     text-align: center;
     outline: 1px solid black;
-    color: white;
+    color: rgb(190, 186, 186);
     padding: 18px 0px;
     width: 100px;
     gap: 10px;
 }
 
-.icons-tr img {
-    height: 45px;
-}
-
 .icons-tr td:hover {
     transition: all 1s;
-    background-color: #24ade3d1;
-    color: white;
+    background-color: #ffffffd1;
+    color: rgb(0, 0, 0);
+}
+
+.icons-tr img {
+    height: 45px;
 }

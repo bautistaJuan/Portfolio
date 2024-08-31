@@ -35,7 +35,11 @@ export default function Header() {
       <header className={styleFor["header"]}>
         <div>
           <a href="#">
-            <img src={headerLogo} className={styleFor["header-logo"]} />
+            <img
+              src={headerLogo}
+              alt="Web illustrations by Storyset"
+              className={styleFor["header-logo"]}
+            />
           </a>
         </div>
         <div className={styleFor["menu-desktop"]}>
