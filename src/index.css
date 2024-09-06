@@ -14,3 +14,26 @@ body {
 .text-shadow {
     text-shadow: rgb(68, 138, 184) 0px 5px 5px;
 }
+
+.mainbg {
+    background-image: url("../src/assets/altumcode-zE007SNgcdE-unsplash.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+}
+
+.hoverEffect {
+    transition: background-image 0.3s ease;
+    cursor: none;
+
+}
+
+.hoverEffect:hover {
+    background-image: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}

@@ -1,10 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import headerLogo from "../../assets/Coding-bro.png";
 import burguerOpen from "../../assets/hamburguer-vector.png";
 import burguerClose from "../../assets/close-button.png";
 import styleFor from "./header.module.css";
 export default function Header() {
   const [showButton, setWhichButton] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleChangeBtn = () => {
     setWhichButton(!showButton);
   };
@@ -32,7 +48,11 @@ export default function Header() {
   };
   return (
     <>
-      <header className={styleFor["header"]}>
+      <header
+        className={`${styleFor["header"]} ${
+          isScrolled ? styleFor.scrolled : ""
+        }`}
+      >
         <div>
           <a href="#">
             <img

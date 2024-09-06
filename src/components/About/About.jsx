@@ -1,28 +1,31 @@
-import Where from "./Where";
-import decoration from "../../assets/strelitzia plant-rafiki.png";
+import deDondeSoy from "../../assets/Ellipse 7.jpg";
 export default function About() {
   return (
     <>
-      <div id="about" className="p-6"></div>
-      <div className="bg-[#2d2f30] w-full p-3 flex flex-col items-center text-center  gap-9 ">
-        <div className="min-w-[22rem] md:w-[30rem] flex flex-col items-center">
-          <h3 className="text-[#0fa0c7] font-extrabold text-[4rem] sm:text-[4.2rem] ">
-            Que hago
-          </h3>
+      <div id="about">
+        <section className="flex flex-col w-full items-center  bg-[#2d2f30] p-5 lg:flex-row lg:justify-around lg:items-center">
+          <div className="text-center lg:text-left p-6 max-w-[35rem]">
+            <h2 className="font-extrabold text-[3rem] text-[#0FA0C7] py-9 px-3">
+              About me
+            </h2>
+            <span className=" sm:text-[1.3rem]  lg:text-[1.5rem]  text-white">
+              Mi nombre es Juan Bautista Vega, tengo 22 años y soy desarrollador
+              web Fullstack. Llevo 2 años en el mundo de la programación.
+              <br />
+              Actualmente me encuentro estudiando día tras día para mejorar mis
+              habilidades y asi poder un dia dar mis primeros pasos dentro del
+              mercado laboral. Al día de la fecha me encuentro en la busqueda de
+              nuevos desafíos para poder compartir mis conocimientos y trabajar
+              en equipo.
+            </span>
+          </div>
           <img
-            src={decoration}
-            alt="decoration"
-            className="hidden lg:block md:absolute md:top-[51rem] md:left-0 w-[20rem]"
+            src={deDondeSoy}
+            className="w-[15rem] sm:w-[22rem] h-[20rem] sm:h-[27rem] "
+            alt="Juan"
           />
-          <p className="text-white p-9 font-extralight sm:text-[1.3rem]">
-            Me encanta crear páginas web innovadoras y atractivas. Mi objetivo
-            es crear experiencias web excepcionales que sean fáciles de usar y
-            visualmente atractivas. Me aseguro de que cada proyecto que realizo
-            sea de alta calidad y cumpla con los estándares de la industria.
-          </p>
-        </div>
+        </section>
       </div>
-      <Where />
     </>
   );
 }

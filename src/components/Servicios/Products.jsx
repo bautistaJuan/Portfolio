@@ -1,30 +1,48 @@
 import diseñoWeb from "../../assets/Prototyping process-bro.png";
 import frontend from "../../assets/Static website-amico.png";
+import backend from "../../assets/Server-amico.png";
 
 export function Products() {
   let info = [
     {
       img: diseñoWeb,
-      title: "Diseño Personalizado",
-      description:
-        "Siguiendo los patrones de diseño UX/UI, me aseguro de que la interfaz de usuario sea intuitiva y fácil de usar. Esto incluye la selección de colores, tipografía, imágenes y otros elementos visuales que se alineen con el mensaje del sitio web.",
+      title: "Diseño de interfaces Web",
+      description: `
+        Siguiendo los patrones de diseño UX/UI, me aseguro de que la interfaz de usuario sea intuitiva y fácil de usar. 
+        Esto incluye la selección de colores, tipografía, imágenes y otros elementos visuales que se alineen con el mensaje del sitio web.
+      `,
       id: "services-interfaces",
     },
     {
       img: frontend,
-      title: "Desarrollo web",
-      description:
-        "Como desarrollador web me enfoco en crear páginas web siguiendo las mejores prácticas de programación y usando las últimas tecnologías para que los usuarios puedan navegar y interactuar con el sitio web de manera rápida y eficiente.",
+      title: "Desarrollo Frontend",
+      description: `
+        Mi trabajo es implementar el diseño visual y crear interacciones utilizando HTML, CSS y JavaScript.
+         Esto incluye la creación de páginas web, formularios, menús desplegables y otros elementos interactivos.
+         conectar el frontend con el backend y asegurarme de que la información se procese y se muestre correctamente en la interfaz de usuario.
+         `,
       id: "services-frontend",
+    },
+    {
+      img: backend,
+      title: "Arquitectura Backend",
+      description: `
+        Como desarrollador backend me encargo de crear mis propias APIs para facilitar la comunicación entre el frontend y el servidor, utilizando el diseño MVC (Modelo-Vista-Controlador) para organizar el código y facilitar la escalabilidad del sistema.
+        Utilizando herramientas como Postman para diseñar y probar los endpoints, y Node.js junto a Express.js para crear y gestionar la lógica del servidor.
+        También utilizo bases de datos tanto SQL como NoSQL.
+      `,
+      id: "services-backend",
     },
   ];
   return (
-    <section className="flex flex-col items-center lg:flex-row lg:gap-[4rem] 2xl:gap-[26rem] ">
+    <section className="flex flex-col items-center ">
       {info.map((inf, index) => {
         return (
           <div
             key={index}
-            className="flex flex-col w-11/12 lg:w-[35rem] sm:w-[30rem] sm:h-[50rem] items-center mb-24 gap-5"
+            className={`flex flex-col lg:flex-row  w-11/12 mt-8 lg:w-[100%] sm:w-[30rem] items-center gap-5 ${
+              inf.id == "services-frontend" ? "lg:flex-row-reverse" : ""
+            } `}
           >
             <img
               src={inf.img}
@@ -39,11 +57,6 @@ export function Products() {
                 {inf.description}
               </span>
             </div>
-            <a href="#contact" className="mt-auto">
-              <button className="bg-[#416BC6] rounded-xl h-[3rem] sm:h-[4rem] w-[15rem] sm:w-[20rem] text-white font-semibold text-[1.2rem] sm:text-[1.5rem] ">
-                Solicitar Servicios
-              </button>
-            </a>
           </div>
         );
       })}

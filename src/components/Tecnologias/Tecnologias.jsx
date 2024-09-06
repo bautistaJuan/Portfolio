@@ -72,16 +72,15 @@ export default function Tecnologias() {
       <>
         <table className={tecnoCss["icons-table"]}>
           <tbody className={tecnoCss["icons-tbody"]}>
-            <tr className={tecnoCss["icons-tr"]}>
+            <tr className={tecnoCss["icons-tr"]} key={1000}>
               {tecnologias.map(info => {
                 return (
                   <>
-                    <td key={info.title}>
+                    <td key={info.id}>
                       <span>
                         <strong>{info.title}</strong>
                       </span>
                       <img
-                        key={info.title}
                         src={info.img}
                         alt={info.title}
                         className={tecnoCss["icons-img"]}

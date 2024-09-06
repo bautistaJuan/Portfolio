@@ -1,26 +1,23 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import chapa from "../../assets/chapa-pintura.jpg";
-import clima from "../../assets/clima.jpg";
 import posterML from "../../assets/mercado-libre-logo.png";
 import world from "../../assets/world.png";
 import github from "../../assets/github-vector.png";
+import chat from "../../assets/chat-app.png";
 
 export default function Portfolio() {
   const proyectos = [
     {
-      title: "Una app para ver clima",
-      subtitle:
-        "TypeScript | React | Tailwind CSS | HTML5 | React Hooks | GitHub | APIs  ",
-      poster: clima,
+      title: "App sencilla para chatear",
+      subtitle: "TypeScript | HTML5 | Firebase | Firestore | API | Vercel CLI",
+      poster: chat,
       id: 0,
-      world: "https://weather-app--psi.vercel.app/",
+      world: "https://github.com/bautistaJuan/app-chat",
       github: "https://github.com/bautistaJuan/weather-app",
-      desc: `He creado una app para ver el clima, podes leer la informacion del clima de todo el mundo ya que tiene una barra de búsqueda para ello.
-       para esta aplicación tuve que consumir la api de openweathermap y la estructure según mis necesidades.
-        Tiene un efecto que hace que el fondo de la página cambie si la temperatura supera los 25°.
-
-      `,
+      desc: `En esta webapp muy simple, permite registrar a usuarios solo con su nombre y
+       su mail para poder luego verificarlos ante la base de datos que esta montada con Firestore y Firebase RealTime. 
+       Puedes ingresar usando un room id que se le otorga a cada sala, pudiendo enviar mensajes, recibirlos en tiempo real y autenticar a los usuarios con un mail. `,
     },
     {
       title: "Buscador de Mercado Libre",
@@ -30,8 +27,8 @@ export default function Portfolio() {
       id: 1,
       world: "https://search-products-sand.vercel.app/",
       github: "https://github.com/bautistaJuan/React-search-products",
-      desc: `He creado una aplicación web donde puedes buscar artículos variados y ver los detalles, precio, imagenes y garantía, solamente buscas el producto del que te gustaría ver los detalles y listo !!.
-       Utilizo la API que provee Mercado Libre para desarrolladores.`,
+      desc: `Buscador de articulos utilizando la Api publica y el diseño de UI de MercadoLibre. La misma fue creada en React,
+       Se aplicaron los conocimientos en custom hooks, funcional components y responsive design..`,
     },
     {
       title: "Chapa y Pintura",
@@ -41,9 +38,7 @@ export default function Portfolio() {
       id: 4,
       world: "https://chapa-pitura.vercel.app/",
       github: "https://github.com/bautistaJuan/chapa-pitura",
-      desc: `Esta página es para aquellas personas que se consideran fan del anime, contiene una colección de los 
-        mejores animes de todos los tiempos.
-        Cree esta página con la intención de practicar un poco con el framework Next.js, utilice un efecto que me gusto mucho de Framer Motion. 
+      desc: `Una SPA para un taller de chapa y pintura, con el objetivo de poder gestionar los clientes y los trabajos que se realizan.
       `,
     },
   ];
@@ -78,15 +73,17 @@ export default function Portfolio() {
                 animate={inView ? "visible" : "hidden"}
                 variants={variants}
                 transition={{ duration: 0.5, delay: p.id * 0.2 }}
-                className="flex flex-col items-center  w-[21rem] sm:w-[26rem] h-[30rem] sm:h-[32rem]"
+                className="flex flex-col items-center  w-[21rem] sm:w-[26rem] h-[40rem] sm:h-[42rem]"
               >
                 <img
-                  className="w-full h-[15.9rem] sm:h-[20rem]"
+                  className="w-full h-[15.9rem] sm:h-[20rem] transition-transform duration-300 hover:scale-150 hover:cursor-zoom-in"
                   src={p.poster}
                 />
-                <div className="flex flex-col p-5 flex-grow">
-                  <h2 className="mb-5 font-semibold">{p.title}</h2>
-                  <h4 className="font-cursive text-[#ffff]">{p.subtitle}</h4>
+                <div className="flex flex-col flex-grow">
+                  <h2 className="mb-5 text-[1.2rem] font-semibold">
+                    {p.title}
+                  </h2>
+                  <h4 className="font-cursive text-[#ffff]">{p.desc}</h4>
                 </div>
                 <div className="flex self-end w-full items-center gap-1">
                   <a
