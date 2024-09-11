@@ -48,6 +48,11 @@ export default function Tecnologias() {
         id: 8,
       },
       {
+        title: "Bash",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+        id: 8,
+      },
+      {
         title: "Vercel",
         img: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
         id: 9,
