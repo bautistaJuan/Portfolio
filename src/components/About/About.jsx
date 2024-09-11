@@ -10,7 +10,7 @@ export default function About() {
             </h2>
             <span className=" sm:text-[1.3rem]  lg:text-[1.5rem]  text-white">
               Mi nombre es Juan Bautista Vega, tengo 22 años y soy desarrollador
-              web Fullstack. Llevo 2 años en el mundo de la programación.
+              web Frontend. Llevo mas 2 años en el mundo de la programación.
               <br />
               Actualmente me encuentro estudiando día tras día para mejorar mis
               habilidades y asi poder un dia dar mis primeros pasos dentro del

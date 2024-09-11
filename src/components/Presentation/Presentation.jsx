@@ -12,7 +12,7 @@ export default function Presentation() {
               Juan.
             </h1>
             <div>
-              <span>Desarrollador Web Fullstack</span>
+              <span>Desarrollador Web Frontend</span>
             </div>
           </div>
         </div>
