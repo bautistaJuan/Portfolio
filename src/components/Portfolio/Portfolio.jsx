@@ -15,7 +15,7 @@ export default function Portfolio() {
       poster: chat,
       id: 0,
       world: "https://app-chat-topaz.vercel.app",
-      github: "https://github.com/bautistaJuan/weather-app",
+      github: "https://github.com/bautistaJuan/app-chat",
       desc: `En esta webapp muy simple, permite registrar a usuarios solo con su nombre y
        su mail para poder luego verificarlos ante la base de datos que esta montada con Firestore y Firebase RealTime. 
        Puedes ingresar usando un room id que se le otorga a cada sala, pudiendo enviar mensajes, recibirlos en tiempo real y autenticar a los usuarios con un mail. `,
