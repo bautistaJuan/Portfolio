@@ -14,7 +14,7 @@ export default function Portfolio() {
       subtitle: "TypeScript | HTML5 | Firebase | Firestore | API | Vercel CLI",
       poster: chat,
       id: 0,
-      world: "https://github.com/bautistaJuan/app-chat",
+      world: "https://app-chat-topaz.vercel.app",
       github: "https://github.com/bautistaJuan/weather-app",
       desc: `En esta webapp muy simple, permite registrar a usuarios solo con su nombre y
        su mail para poder luego verificarlos ante la base de datos que esta montada con Firestore y Firebase RealTime. 
