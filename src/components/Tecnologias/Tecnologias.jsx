@@ -3,11 +3,6 @@ export default function Tecnologias() {
   const Icons = () => {
     const tecnologias = [
       {
-        title: "Linux",
-        img: "https://devicon-website.vercel.app/api/linux/original.svg"t,
-        id: 1,
-      },
-      {
         title: "React",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         id: 1,
@@ -21,11 +16,6 @@ export default function Tecnologias() {
         title: "JavaScript",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         id: 3,
-      },
-      {
-        title: "NodeJS",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        id: 12,
       },
       {
         title: "Express",
@@ -68,14 +58,24 @@ export default function Tecnologias() {
         id: 10,
       },
       {
+        title: "Figma",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        id: 11,
+      },
+      {
+        title: "NodeJS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        id: 12,
+      },
+      {
         title: "Tailwind",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
         id: 13,
       },
-      {
-        title: "Figma",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-        id: 11,
+       {
+        title: "Linux",
+        img: "https://devicon-website.vercel.app/api/linux/original.svg",
+        id: 14,
       },
     ];
     return (
