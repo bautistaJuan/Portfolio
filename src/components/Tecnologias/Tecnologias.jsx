@@ -3,6 +3,11 @@ export default function Tecnologias() {
   const Icons = () => {
     const tecnologias = [
       {
+        title: "Linux",
+        img: "https://devicon-website.vercel.app/api/linux/original.svg"t,
+        id: 1,
+      },
+      {
         title: "React",
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         id: 1,
