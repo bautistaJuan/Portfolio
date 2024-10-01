@@ -3,7 +3,7 @@
 }
 
 .sphere {
-    width: 460px;
+    width: 378px;
     margin: 0 auto;
     filter: drop-shadow(10px 20px 10px #3d3d45);
 }
@@ -16,7 +16,7 @@
 
 @media (width > 1024px) {
     .sphere {
-        width: 700px;
+        width: 500px;
     }
 }
 
