@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import "./index.css";
 import Services from "./components/Servicios/Services";
 import Tecnologias from "./components/Tecnologias/Tecnologias";
+
 function App() {
   return (
     <div className="app-container">

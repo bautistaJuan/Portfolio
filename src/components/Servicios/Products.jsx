@@ -53,7 +53,7 @@ export function Products() {
               <h4 className="text-[1.5rem] sm:text-[1.8rem] font-bold p-5">
                 {inf.title}
               </h4>
-              <span className="font-extralight text-[1rem] sm:text-[1.4rem]">
+              <span className="max-w-[500px] font-extralight text-[1rem] sm:text-[1.4rem]">
                 {inf.description}
               </span>
             </div>

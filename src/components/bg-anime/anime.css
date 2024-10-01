@@ -1,0 +1,33 @@
+.animation-wrapper {
+    width: 100%;
+}
+
+.sphere {
+    width: 460px;
+    margin: 0 auto;
+    filter: drop-shadow(10px 20px 10px #3d3d45);
+}
+
+@media (width > 700px) {
+    .sphere {
+        width: 600px;
+    }
+}
+
+@media (width > 1024px) {
+    .sphere {
+        width: 700px;
+    }
+}
+
+
+.sphere path {
+    transition: all .1s ease-in;
+    stroke: rgba(15, 109, 186, 0.35);
+    backface-visibility: visible;
+}
+
+.sphere:hover path {
+    fill: none;
+    stroke-width: 3px;
+}

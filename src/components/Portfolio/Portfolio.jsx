@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import chapa from "../../assets/chapa-pintura.jpg";
 import posterML from "../../assets/mercado-libre-logo.png";
 import world from "../../assets/world.png";
 import github from "../../assets/github-vector.png";
@@ -41,17 +40,6 @@ export default function Portfolio() {
       github: "https://github.com/bautistaJuan/ppt-dwf",
       desc: `El clásico juego de piedra papel o tijera, fue creado con JavaScript, HTML5, CSS, Custom Elements. Es una SPA que permite jugar contra la computadora. 
       Consta de 3 secciones, la primera es la pantalla de inicio, la segunda es la pantalla de juego y la tercera es la pantalla de resultados.`,
-    },
-    {
-      title: "SPA Para taller de chapa y pintura",
-      subtitle:
-        "JavaScript| SPA | HTML5 | CSS | Custom-Elements | Figma | Social Media | Mobile",
-      poster: chapa,
-      id: 4,
-      world: "https://chapa-pitura.vercel.app/",
-      github: "https://github.com/bautistaJuan/chapa-pitura",
-      desc: `Una SPA para un taller de chapa y pintura, esta SPA fue creada con JavaScript, HTML5, CSS, Custom Elements y Figma. Es una pagina web que muestra los trabajos que se realizan en el taller y links a las redes sociales del taller. 
-      `,
     },
   ];
   const { ref, inView } = useInView({
