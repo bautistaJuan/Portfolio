@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.custom-shadow:hover {
+    filter: drop-shadow(0 6px 9px rgba(41, 135, 230, 0.6));
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

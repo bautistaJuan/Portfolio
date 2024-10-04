@@ -76,7 +76,11 @@ export default function Header() {
             </button>
           ) : (
             <>
-              <div className={styleFor["nav-menu"]}>
+              <div
+                className={`${styleFor["nav-menu"]} ${
+                  showButton ? styleFor["nav-menu-active"] : ""
+                }`}
+              >
                 <div className={styleFor["nav-div_button"]}>
                   <button onClick={handleChangeBtn}>
                     <img

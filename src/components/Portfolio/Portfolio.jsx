@@ -9,7 +9,7 @@ import ppt from "../../assets/ppt.jpg";
 export default function Portfolio() {
   const proyectos = [
     {
-      title: "App chatear",
+      title: "Chat Online",
       subtitle: "TypeScript | HTML5 | Firebase | Firestore | API | Vercel CLI",
       poster: chat,
       id: 0,

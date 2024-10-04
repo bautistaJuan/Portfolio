@@ -6,7 +6,7 @@ export function Products() {
   let info = [
     {
       img: diseñoWeb,
-      title: "Diseño de interfaces Web",
+      title: "Diseño Web",
       description: `
         Siguiendo los patrones de diseño UX/UI, me aseguro de que la interfaz de usuario sea intuitiva y fácil de usar. 
         Esto incluye la selección de colores, tipografía, imágenes y otros elementos visuales que se alineen con el mensaje del sitio web.
@@ -29,7 +29,7 @@ export function Products() {
       description: `
         Como desarrollador backend me encargo de crear mis propias APIs para facilitar la comunicación entre el frontend y el servidor, utilizando el diseño MVC (Modelo-Vista-Controlador) para organizar el código y facilitar la escalabilidad del sistema.
         Utilizando herramientas como Postman para diseñar y probar los endpoints, y Node.js junto a Express.js para crear y gestionar la lógica del servidor.
-        También utilizo bases de datos tanto SQL como NoSQL.
+        Utilizando una bases de datos NoSQL (Firebase) .
       `,
       id: "services-backend",
     },
