@@ -3,22 +3,22 @@
 }
 
 .sphere {
-    width: 378px;
+    width: 370px;
     margin: 0 auto;
     filter: drop-shadow(10px 20px 10px #3d3d45);
 }
 
 @media (width > 700px) {
     .sphere {
-        width: 600px;
-    }
-}
-
-@media (width > 1024px) {
-    .sphere {
         width: 500px;
     }
 }
+
+/* @media (width > 1024px) {
+    .sphere {
+        width: 650px;
+    }
+} */
 
 
 .sphere path {
