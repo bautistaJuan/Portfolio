@@ -3,7 +3,7 @@ export default function About() {
   return (
     <>
       <div id="about">
-        <section className="flex flex-col w-full items-center  bg-[#000000] p-5 lg:flex-row lg:justify-around lg:items-center">
+        <section className="flex flex-col w-full items-center  bg-[#000000] p-5 lg:flex-row lg:justify-evenly lg:items-center">
           <div className="text-center lg:text-left p-6 max-w-[35rem]">
             <h2 className="font-extrabold text-[3rem] text-[#0FA0C7] py-9 px-3">
               About me

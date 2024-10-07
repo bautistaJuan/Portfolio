@@ -2,12 +2,25 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import posterML from "../../assets/mercado-libre-logo.png";
 import world from "../../assets/world.png";
-import github from "../../assets/github-vector.png";
 import chat from "../../assets/chat-app.png";
 import ppt from "../../assets/ppt.jpg";
+import HDV from "../../assets/HDV2.jpg";
 
 export default function Portfolio() {
   const proyectos = [
+    {
+      title: "Calcula tus horas de vida",
+      subtitle: "TypeScript | HTML5 | Firebase | Firestore | API | Vercel CLI",
+      poster: HDV,
+      id: 0,
+      world: "https://horas-de-vida.netlify.app/",
+      github: "https://horas-de-vida.netlify.app/",
+      desc: `Esta web te muestra la cantidad de horas que llevas vivo. Solamente ingresando tu fecha de nacimiento.
+      Como adicional, podes ver las horas que faltan para alguna fecha en especial.
+      Desarrollada con JavaScript, HTML5 y CSS3. Tiene efectos básicos, como el Loader y la aparición de los resultados.
+        
+      `,
+    },
     {
       title: "Chat Online",
       subtitle: "TypeScript | HTML5 | Firebase | Firestore | API | Vercel CLI",
@@ -15,7 +28,7 @@ export default function Portfolio() {
       id: 0,
       world: "https://app-chat-topaz.vercel.app",
       github: "https://github.com/bautistaJuan/app-chat",
-      desc: `En esta webapp muy simple, permite registrar a usuarios solo con su nombre y
+      desc: `En esta webapp simple, permite registrar a usuarios solo con su nombre y
        su mail para poder luego verificarlos ante la base de datos que esta montada con Firestore y Firebase RealTime. 
        Puedes ingresar usando un room id que se le otorga a cada sala, pudiendo enviar mensajes, recibirlos en tiempo real y autenticar a los usuarios con un mail. `,
     },
@@ -85,18 +98,12 @@ export default function Portfolio() {
                   </h2>
                   <h4 className="font-cursive text-[#ffff]">{p.desc}</h4>
                 </div>
-                <div className="flex self-end w-full items-center gap-1">
+                <div className="flex self-end w-full justify-center ">
                   <a
                     href={p.world}
-                    className="w-1/2 min-h-full  flex justify-center bg-[#2766b3] p-2"
+                    className="w-full min-h-full  flex justify-center bg-[#2766b3] p-2 rounded-md shadow-inner hover:bg-[#d3a33b] "
                   >
                     <img src={world} width={50} />
-                  </a>
-                  <a
-                    href={p.github}
-                    className=" w-1/2 min-h-full flex justify-center bg-[#0f151b] p-2"
-                  >
-                    <img src={github} width={50} />
                   </a>
                 </div>
               </motion.div>
