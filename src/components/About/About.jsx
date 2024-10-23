@@ -11,20 +11,16 @@ export default function About() {
             <span className=" sm:text-[1.3rem]  lg:text-[1.5rem]  text-white">
               <b>
                 Mi nombre es Juan Bautista Vega, soy
-                <b className="text-[#439cd0]"> Frontend Developer</b>. Me dedico
-                a la creación de sitios webs atractivos y funcionales. Mi pasión
-                por la programación y la tecnología me ha traido hasta aquí,
-                impulsado por el esfuerzo y la dedicación.
-              </b>
-              <b className="text-[#838d93]">
-                {" "}
-                Mi motivación principal es ayudar a las personas a resolver sus
-                problemas a través de la tecnología, lo que me lleva a
-                perfeccionarme continuamente como desarrollador., Cada proyecto
-                es una oportunidad para aplicar mis conocimientos, generar
-                valor, y establecer conexiones significativas con los clientes y
-                colegas con los que tengo el privilegio de trabajar.
-              </b>
+                <b className="text-[#439cd0]"> Frontend Developer</b>.
+              </b>{" "}
+              Soy desarrollador autodidacta, vivo en Argentina y tengo 22 años.
+              Entré al mundo de la programación en el 2021 con La Geekipedia De
+              Ernesto, practicando y familiarizándome con el diagrama de flujo
+              con Raptor para posteriormente aplicarlo en JavaScript, el primer
+              y único lenguaje, por el momento, de programación que actualmente
+              manejo y sigo aprendiendo día a día. Desde entonces sigo
+              capacitándome para poder algún día dar mis primeros pasos en el
+              mundo laboral.
             </span>
           </div>
           <img

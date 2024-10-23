@@ -29,7 +29,7 @@ export default function Contact() {
       id="contact"
       className="flex flex-col bg-[#161C1F] text-white h-[82rem]  gap-20 md:justify-around md:gap-10"
     >
-      <h3 className="text-[#0fa0c7] text-3xl md:text-[3rem] font-bold text-center mt-20">
+      <h3 className="text-[#0fa0c7] text-[3rem] font-bold text-center mt-20">
         Escribime
       </h3>
       <Form />
