@@ -77,6 +77,11 @@ export default function Tecnologias() {
         img: "https://devicon-website.vercel.app/api/linux/original.svg",
         id: 14,
       },
+       {
+        title: "Framer Motion",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+        id: 15,
+      },
     ];
     return (
       <>
