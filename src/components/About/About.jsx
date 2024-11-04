@@ -14,10 +14,14 @@ export default function About() {
                 <b className="text-[#439cd0]"> Frontend Developer</b>.
               </b>{" "}
               Soy desarrollador autodidacta, vivo en Argentina y tengo 22 años.
-              Entré al mundo de la programación en el 2021 con La Geekipedia De
-              Ernesto, practicando y familiarizándome con el diagrama de flujo
-              con Raptor para posteriormente aplicarlo en JavaScript, el primer
-              y único lenguaje, por el momento, de programación que actualmente
+              desde muy chiquito me gustó el mundo de la programación, empecé
+              escribiendo comandos básicos en mi terminal, descubrir que podia
+              utilizar mi computadora solamente escribiendo unas cuantas lineas
+              de codigo fue una locura para mi, desde ahí empecé investigar
+              hasta que en el 2020 encontré La Geekipedia De Ernesto,
+              practicando y familiarizándome con el diagrama de flujo utilizando
+              Raptor para posteriormente aplicarlo en JavaScript, el primer y
+              único lenguaje, por el momento, de programación que actualmente
               manejo y sigo aprendiendo día a día. Desde entonces sigo
               capacitándome para poder algún día dar mis primeros pasos en el
               mundo laboral.
