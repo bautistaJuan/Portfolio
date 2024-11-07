@@ -1,29 +1,10 @@
-import whatsapp from "../../assets/whatsApp.png";
-import instagram from "../../assets/2587941_instagram_media_social_icon.png";
-import github from "../../assets/github-vector.png";
-import linkedin from "../../assets/linkedin.png";
 import Form from "../Form/Form";
+
 import juanchi from "../../assets/Coding-bro.png";
+import { SOCIAL_MEDIA } from "../../constants";
 
 export default function Contact() {
-  const socialMedias = [
-    { name: "GitHub", link: "https://github.com/bautistaJuan", img: github },
-    {
-      name: "Linkedin",
-      link: "https://www.linkedin.com/in/juanbautista-dev/",
-      img: linkedin,
-    },
-    {
-      name: "WhatsApp",
-      link: "https://wa.me/+5491165557489?text=!Hola Juan!",
-      img: whatsapp,
-    },
-    {
-      name: "Instagram",
-      link: "https://www.instagram.com/juanchidev",
-      img: instagram,
-    },
-  ];
+
   return (
     <div
       id="contact"
@@ -35,7 +16,7 @@ export default function Contact() {
       <Form />
       <div className="flex flex-col text-center">
         <div className="flex justify-center gap-10 p-5">
-          {socialMedias.map((data, index) => {
+          {SOCIAL_MEDIA.map((data, index) => {
             return (
               <div key={index} className="flex flex-col-reverse items-center">
                 <a href={data.link} className="w-12">
